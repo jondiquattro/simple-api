@@ -3,8 +3,7 @@
 const jsonServer = require('json-server')
 const server = jsonServer.create()
 const router = jsonServer.router('./db/db.json')
-const middlewares = jsonServer.defaults()
-const x = require('./')
+const middlewares = jsonServer.defaults();
 
 // Custom
 router.render = (req, res) => {
